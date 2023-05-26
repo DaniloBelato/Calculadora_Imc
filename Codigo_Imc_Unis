@@ -11,10 +11,8 @@ public class Imc {
 		input = JOptionPane.showInputDialog("Digite sua altura em metros: use o '.' como separador");
 		double altura = Double.parseDouble(input);
 
-		// Cálculo do IMC
 		double imc = peso / (altura * altura);
 
-		// Exibição do resultado
 		if (imc < 19) {
 			JOptionPane.showMessageDialog(null, "Você está abaixo do peso! Seu IMC é: " + imc);
 		} else if (imc >= 19 && imc < 26) {
